@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/Corazon.svg" />
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img class="logo__img" src="./assets/Logo.png" alt="logo de alura" />
+      </div>
+      <div class="entrada">
+        <textarea
+          inputmode="text"
+          autocapitalize="none"
+          spellcheck="false"
+          maxlength="1500"
+          placeholder="Ingrese el texto aquí..."
+          name="bloque de entrada"
+          id="input"
+        ></textarea>
+        <div class="entrada__alerta">
+          <span class="signo">!</span>
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="entrada__botones">
+          <button onclick="encriptarTexto();" class="entrada__botones--boton1">
+            Encriptar
+          </button>
+          <button
+            onclick="desencriptarTexto();"
+            class="entrada__botones--boton2"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="salida">
+        <div class="salida__wrapper">
+          <div id="output"></div>
+          <div class="salida__boton">
+            <button onclick="copiarTexto();" class="salida__boton--boton">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Desarrollado por: Jennifer Alexis Rodriguez Barrón 💜</p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
